@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+{% block title %} books {% endblock %}
+{% block content %}
+<div >
+    <div class="row container-fluid text-center" >
+        <div class="col-md-6" >
+            <img src="{{book.thumbnailUrl}}"  alt="" style="width:50%">               
+            <h1>{{book.title}}</h1> 
+        </div>
+        <div class="col-6">
+            <p>{{book.longDescription}}</p>
+            <br>
+            <h3>{{book.authors|join:" | "}}</h3>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
